@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <div class="container">
+        <div class="user">
+            <h2>Felo</h2>
+        </div>
+    </div>
+</nav>
+    
+
+<section class="home">
+    <div class="row">
+        <div class="col lg-3">
+            <div class="left">
+                <div class="logo">
+                   <h1>
+                    <span>Curd</span>
+                    system
+                   </h1>
+                </div>
+                <ul>
+                    <a href="#">products</a>
+                </ul>
+            </div>
+<div class="col lg-9">
+    <div class="product">
+        <div class="input">
+
+            <label for="product_name">Product Name</label>
+            <input type="text" class="text form-control" id="product_Name" placeholder="Product Name" required>
+
+            <label for="Product_Category"> Product Category</label>
+            <input type="text" class="text form-control" id="Product_Category" placeholder="Product Category" required>
+
+            <label for="product_price"> Product price</label>
+            <input type="number" class="text form-control" id="product_price" placeholder="Product price" required>
+
+            <label for="product_Description"> Product Description</label>
+            <input type="text" class="text form-control" id="product_Description" placeholder="Product Description" required>
+
+            <label for="product_count"> Product count</label>
+            <input type="number" class="text form-control" id="product_count" placeholder="Product count" required>
+
+            <div class="d-grid gap-2 d-md-block">
+                <button class="btn btn-primary" type="button" id="Add_Product">Add product</button>
+              </div>
+              <div class="search">
+                <input type="search" class="form-control"  id="search" placeholder="search...">
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="table">
+    <table border="1">
+        <thead>
+            <tr>
+                <th> product ID</th>
+                <th>Product Name</th>
+                <th>Product Category </th>
+                <th>Product price</th>
+                <th>Product Description</th>
+                <th>Product count</th>
+                <th>Edit</th>
+                <th>Delete</th>
+
+            </tr>
+        </thead>
+        <tbody id="tbody">
+       
+        </tbody>
+    </table>
+</div>
+    
+</section>
+
+
+    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
